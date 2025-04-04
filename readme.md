@@ -27,7 +27,7 @@ Este repositorio es ideal como punto de partida para aprender a combinar estas t
 
 Para crear el proyecto se ejecutarán una serie de comandos en terminal.
 
-- Primero deberemos crear la carpeta del proyecto y entrar en la misma
+- Primero deberemos crear la carpeta del proyecto y entrar en la misma.
 
 ```bash
 mkdir mi-proyecto && cd mi-proyecto
@@ -178,7 +178,7 @@ Si es así, felcidades, has terminado la configuración inicial de Vite, Bootstr
 
 ## Previo a Supabase
 
-Antes de integrar Supabase, e indicar que pasos se deben seguir, primero crearemos las distintas vistas en html que tendremos en nuestra aplicación, para asi, posteriormente, crear las funciones de javascript que se encargaran de realizar las peticiones a la base de datos.
+Antes de integrar Supabase, e indicar que pasos se deben seguir, primero crearemos las distintas vistas en html que tendremos en nuestra aplicación, para asi, posteriormente, crear las funciones de javascript que se encargaran de realizar las peticiones a la base de datos. Para ello modificaremos el index.html, y crearemos 2 mas llamados registro.html y perfil.html
 
 ### index.html
 
@@ -527,6 +527,32 @@ document.addEventListener("DOMContentLoaded", async () => {
     window.location.href = "index.html";
   }
 });
+```
+
+Deberiamos tener una estrucura en el proyecto similar a esta
+
+```bash
+mi-proyecto/
+├── src
+│   ├── js
+│   │   ├── services
+│   │   │   └── authService.js
+│   │   ├── main.js
+│   │   ├── perfil.js
+│   │   ├── registro.js
+│   │   └── supabase.js
+│   ├── scss
+│   │   └── styles.scss
+│   ├── index.html
+│   ├── perfil.html
+│   └── registro.html
+├── .env
+├── .gitignore
+├── .sassrc
+├── package-lock.json
+├── package.json
+├── readme.md
+└── vite.config.js
 ```
 
 Si ahora entramos en la pagina web, deberiamos poder registrarnos, logearnos, ver nuestro perfil y cerrar sesion. Deberia verse asi la aplicación.
