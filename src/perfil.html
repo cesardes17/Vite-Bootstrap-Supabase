@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile - Bootstrap w/ Vite</title>
+    <script type="module" src="./js/profile.js"></script>
+</head>
+<body>
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h2 class="text-center mb-4">Profile</h2>
+                        <div id="profile-info">
+                            <div class="mb-3">
+                                <label class="fw-bold">Email:</label>
+                                <p id="user-email"></p>
+                            </div>
+                            <div class="mb-3">
+                                <label class="fw-bold">User ID:</label>
+                                <p id="user-id"></p>
+                            </div>
+                            <div class="mb-3">
+                                <label class="fw-bold">Last Sign In:</label>
+                                <p id="last-signin"></p>
+                            </div>
+                        </div>
+                        <button id="logout-btn" class="btn btn-danger">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
